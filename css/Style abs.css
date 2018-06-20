@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pp{
+	text-align:center;
+}
+
+.cd {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.cf {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.cds {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.CD {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.DC {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.C {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.S {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.CD {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.imagen{
+	width:146px;
+	height:40px;
+	alignment-baseline:middle;
+}
+
+.superior{
+	Width:100% ;
+	height:10px;
+	background-color:#FFF;
+}
+
+.logo{
+	width:185px ;
+	height:101px;
+}
+
+.td1{
+	width:21%;
+	height:76;
+	display:block;
+
+}
+
+.tb2{
+width:100%;
+ height:52px; 
+ background:#c0c0c0;
+}
+
+H2{
+	text-align:center;
+}
+
+.td2{
+	width:66%;
+}
+
+.td3{
+	 width:13%;
+}
+

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.AH{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.tb1{
+width:90%;
+height:90px; 
+background:#F2F2F2;
+}
+
+
+
+.td5{
+	width:36%;
+}
+
+.tb5{
+	height:779px;
+}
+
+.tb6{
+	width:98%;
+	height:31%;
+	margin-right:auto;
+}
+
+
+.td6{
+	height:479px;
+}
+
+.td7{
+	height:290px;
+}
+
+.td8{
+	width:64%;
+}
+
+.td9{
+	 height:152px;
+}
+
+.td10{
+	 height:136px;
+}
+
+.td11{
+	height:165px;
+}
+
+.td12{
+	 height:165px;
+}
+
+.td13{
+	height:42p;
+	text-align:center;
+}
+
+.imag{
+width:435px; 
+height:500px;
+margin-right:auto;
+}
