@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<script language="javascript" type="text/javascript"> 
+
+
+function ValidaDatos(i)
+{
+	var Ses_usua=document.Frmdatos.Ses_usua;
+	var Ses_cont=document.Frmdatos.Ses_cont;
+
+	if(Ses_usua.value!="Admin")
+	{
+		alert("Usuario equivocado")
+		return false;
+	}
+
+	if(Ses_cont.value!=="lumen2018")
+	{
+		alert("Contraseña incorrecta")
+		return false;
+	}
+
+	return true;
+}
+
+
+
+</script>
+
+<script language="javascript" type="text/javascript"> 
+
+
+function DatosValidos(e)
+{
+	var Usuario=document.Formdatos.Usuario;
+	var Contraseña=document.Formdatos.Contraseña;
+	var Conf_contraseña=document.Formdatos.Conf_contraseña;
+	var Email=document.Formdatos.Email;
+	var Telefono=document.Formdatos.Telefono;
+
+	if(Usuario.value=="")
+	{
+		alert("Especifique usuario")
+		return false;
+	}
+	
+		if(Usuario.value.length<=7)
+	{
+		alert("Usuario debe llevar al menos 8 carácteres")
+		return false;
+	}
+	
+		if(Contraseña.value=="")
+	{
+		alert("Especifique Contraseña")
+		return false;
+	}
+	
+
+	if(Contraseña.value.length!=8)
+	{
+		alert("Contraseña debe llevar 8 carácteres")
+		return false;
+	}
+	
+	if(Conf_contraseña.value=="")
+	{
+		alert("Confirme contraseña")
+		return false;
+	}
+	
+		if(Conf_contraseña.value.length!=8)
+	{
+		alert("Confirmación incorrecta")
+		return false;
+	}
+	
+	if(Email.value=="")
+	{
+		alert("Especifique Email")
+		return false;
+	}
+	
+	if(Telefono.value=="")
+	{
+		alert("Especifique Telefono")
+		return false;
+	}
+	
+		if(Telefono.value.length!=10)
+	{
+		alert("Telefono debe llevar 10 carácteres")
+		return false;
+	}
+
+	return true;
+}
+
+
+
+</script>
+<link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+<div class="contenedor-form">
+<div class="toggle">
+
+<span> Crear cuenta</span>
+</div>
+
+<div class="formulario"> 
+<h2> Iniciar sesión </h2>
+<form id="form1" name="Frmdatos" method="get" onsubmit="return ValidaDatos()" action="index.html">
+<input name="Ses_usua" type="text" id="Ses_usua" placeholder="Usuario" />
+<input name="Ses_cont" type="password" id="Ses_cont" placeholder="Contraseña" />
+<input type="submit" value="Iniciar sesión" />
+
+</form>
+
+</div>
+
+<div class="formulario"> 
+<h2> Crear cuenta </h2>
+<form id="form2" name="Formdatos" method="get" onsubmit="return DatosValidos()" action="registro exitoso.html">
+<input name="Usuario" type="text" id="Usuario" placeholder="Usuario"  />
+<input name="Contraseña" type="password" id="Contraseña" placeholder="Contraseña"  />
+<input name="Conf_contraseña" type="password" id="Conf_contraseña" placeholder="Confirme contraseña"  />
+<input name="Email" type="email" id="Email" placeholder="Correo electrónico"  />
+<input name="Telefono" type="text" id="Telefono" placeholder="Teléfono"  />
+<input type="submit" value="Registrarse" />
+
+</form>
+
+</div>
+
+<div class="reset-password">
+<a href="#"> Olvidé mi contraseña </a>
+</div>
+
+</div>
+<script src="js/jquery-3.1.1.min.js"> </script>
+<script src="js/main.js"> </script>
+
+
+</body>
+</html>
